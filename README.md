@@ -1,2 +1,8 @@
-# promoi-modulo2-sprint2-pairprogramming-Ceci_Bea
-Repositorio para los trabajos de pair del sprint 2 del modulo 2 de Adalab.
+# Pair programing Ceci & Bea - SQL & Python exercises
+This repository contains pair programming exercises from Adalab Data Analytics Bootcamp, module 2 -> sprint 2
+
+Module 2 -> sprint 2 content: Selenium SQL advanced queries, Joins, special filter operators, subqueries, CTE's, Python + SQL and file reading.
+
+## Team
+- Cecilia Singh
+- Beatriz Diaz
