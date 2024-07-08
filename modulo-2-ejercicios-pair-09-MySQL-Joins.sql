@@ -89,8 +89,8 @@ SELECT c.company_name,o.order_id,o.order_date
 	-- Concretamente nos piden: la ubicación, nombre, y apellido tanto de las empleadas como de las jefas. Investiga el resultado, ¿sabes decir quién es el director?
     
 SELECT e.city AS Ciudad, e.first_name AS NombreEmpleado, e.last_name AS ApellidoEmpleado, j.city AS Ciudad, j.first_name AS NombreJefe, j.last_name AS ApellidoJefe
-	FROM employees AS e
-    INNER JOIN employees AS j ON e.reports_to = j.employee_id -- Por lo que he visto, no existe el SELF JOIN en mysql o más bien no lo reconoce y se usa el inner o el left en su lugar. Esto em gustaría preguntarselo bien a cesar.
+	FROM employees AS e, eployees AS j
+    WHERE e.reports_to = j.employee_id -- No se escriben como SELF JOIN, se indica con el WHERE y en el from pones las dos tablas.
     ORDER BY e.city, e.first_name, e.last_name;
     
 -- 10. BONUS: FULL OUTER JOIN
